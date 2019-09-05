@@ -1,0 +1,34 @@
+.histogram__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  .histogram {
+    background: $histogram-backgroun-color;
+    border-radius: 2px;
+    flex: 0 0 calc(50% - 40px);
+    padding: 20px;
+    margin: 20px;
+
+    .histogram__title {
+      font-weight: 700;
+    }
+
+    .histogram__row {
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+
+      .hisogram__row__title {
+        flex: 0 0 40%;
+      }
+
+      .hisogram__row__value {
+        flex: 0 0 10%;
+      }
+
+      .hisogram__row__bar {
+        min-height: 20px;
+      }
+    }
+  }
+}

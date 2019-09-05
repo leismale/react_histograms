@@ -11,8 +11,8 @@ const Histogram = ({ data }) => {
     Object.values(data.data).reduce((e, acc) => e + acc);
 
   // Generate random color
-  const generateColours = data =>
-    "#" + Math.floor(Math.random() * 16777215).toString(16);
+  const generateColours = () =>
+    "#" + (((1 << 24) * Math.random()) | 0).toString(16);
 
   let sortedData = sortDataAsc(data);
   let totalValue = getTotalValue(data);
